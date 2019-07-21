@@ -6,8 +6,8 @@ baseurl:            "/"
 url:                "https://daehoanshin.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    daehoanshin
+twitter_username:
+github_username:  daehoanshin
 facebook_username:
 youtube_username: xbb123
 linkedin_username:
