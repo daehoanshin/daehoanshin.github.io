@@ -1,5 +1,4 @@
 ## 컨테이너
-
 ### 라이프 사이클
 
 * [`docker run [이미지 이름 또는 ID]`](http://docs.docker.io/en/latest/commandline/cli/#run) 컨테이너를 생성한다.
@@ -20,16 +19,12 @@
 * [`docker top`](http://docs.docker.io/en/latest/commandline/cli/#top) 컨테이너에서 실행중인 프로세스를 보여준다.
 * [`docker diff`](http://docs.docker.io/en/latest/commandline/cli/#diff) 컨테이너 파일 시스템에서 변경된 파일들을 보여준다.
 
-
-
 ### File Copy
-
 * [`docker cp [이미지 이름 또는 ID]:[이미지 내 경로] [호스트 경로]`](http://docs.docker.io/en/latest/commandline/cli/#cp) 컨테이너 내의 파일을 호스트로 복사한다.
 * [`docker cp  [호스트 경로] [이미지 이름 또는 ID]:[이미지 내 경로]`](http://docs.docker.io/en/latest/commandline/cli/#cp) 호스트의 파일을 컨테이너 내로 복사한다.
-
+#
 
 ## Docker 이미지
-
 ### 라이프 사이클
 
 * [`docker images`](http://docs.docker.io/en/latest/commandline/cli/#images) 모든 이미지 목록을 보여준다.
