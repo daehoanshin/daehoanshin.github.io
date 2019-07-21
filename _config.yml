@@ -1,56 +1,42 @@
-# Site Information
-license:           "MIT"
-license-url:       "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
-author:            "Blackrock Digital"
+permalink   : /:categories/:year/:title/
+markdown    : kramdown
+highlighter : pygments
 
-# Site Settings
-baseurl:           ""
+paginate: 2 #6
+comments: true
+paginate_path: "/page/:num"
 
-# Build settings
-markdown:          kramdown
-exclude:           [node_modules]
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed
 
-# Permalinks
-permalink:        /blog/:year/:month/:day/:title/
+cover: /assets/images/default-cover.png
 
-# Server
-url:               https://daehoanshin.github.io/
-enforce_ssl:       startbootstrap.com
-encoding:          UTF-8
-host:              localhost
-port:              9000
+# site title, description, meta_description, meta_keywords
+# Details for the RSS feed generator
+name: Mug Jekyll theme
+title: Mug
+description: "A free Jekyll theme for download"
+keywords: "Jekyll, theme, mug, free, download, SEO, blog, web"
+url: http://nandomoreira.me
+baseurl: "/mug"
+domain_name: nandomoreira.me
+# google_analytics: UA-52446115-1
+repo: http://github.com/nandomoreirame/mug
+disqus_shortname: "nandothemes"
 
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-tidy
+author:
+  name      : Fernando Moreira
+  image     : /assets/images/author.jpg
+  email     : nandomoreira.me@gmail.com
+  url       : http://nandomoreira.me
+  facebook  : http://facebook.com/fernando.dev
+  twitter   : http://twitter.com/nandomoreirame
+  instagram : http://instagram.com/nandomoreira.me
+  github    : http://github.com/nandomoreirame
+  linkedin  : http://linkedin.com/in/nandomoreirame
+  bio       : "Desenvolvedor Front-end/Wordpress entusiasta de performance, design responsivo e usabilidade, sempre em busca do melhor projeto e de um bom café."
 
-# Collections
-collections:
-  themes:
-    output:        true
-    permalink:     /:collection/:title/
-  templates:
-    output:        true
-    permalink:     /:collection/:title/
-  snippets:
-    output:        true
-    permalink:     /:collection/:title/
-  guides:
-    output:        true
-    permalink:     /:collection/:title/
-  previews:
-    output:        true
-    permalink:     /:collection/:title/
-  premium:
-    output:        false
-
-# Pagination
-paginate: 5
-paginate_path: "/blog/page:num/"
-
-# Blog Excerpt Separator
-excerpt_separator: "<!--more-->"
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
