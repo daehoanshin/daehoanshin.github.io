@@ -76,7 +76,17 @@
               </span>
             </a>
           </li>
-          {% endif %}      
+          {% endif %}
+          {% if site.sdhlab_username %}
+          <li class="list-inline-item">
+            <a href="http://www.{{ site.sdhlab_username }}.com/">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-home fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
         </ul>
         <p class="copyright text-muted">Copyright &copy; {{ site.author }} {{ 'now' | date: "%Y" }}</p>
       </div>
