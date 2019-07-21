@@ -14,7 +14,7 @@ exclude:           [node_modules]
 permalink:        /blog/:year/:month/:day/:title/
 
 # Server
-url:               https://startbootstrap.com
+url:               https://daehoanshin.github.io/
 enforce_ssl:       startbootstrap.com
 encoding:          UTF-8
 host:              localhost
