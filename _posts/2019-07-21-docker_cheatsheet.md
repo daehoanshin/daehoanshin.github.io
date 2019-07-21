@@ -20,7 +20,6 @@
 
 #### File Copy
 * [`docker cp  [호스트 경로] [이미지 이름 또는 ID]:[이미지 내 경로]`](http://docs.docker.io/en/latest/commandline/cli/#cp) 호스트의 파일을 컨테이너 내로 복사한다.  
-
 * [`docker cp [이미지 이름 또는 ID]:[이미지 내 경로] [호스트 경로]`](http://docs.docker.io/en/latest/commandline/cli/#cp) 컨테이너 내의 파일을 호스트로 복사한다.  
 
 
