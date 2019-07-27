@@ -44,6 +44,7 @@ OPTIMISTIC_ABOUT_FILE_LOCKING=1
 
 
 ## splunk sh1
+```
 docker run \
     -p 8000:8000 \
     -p 8089:8089 \
@@ -54,8 +55,10 @@ docker run \
     -v /home/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     --name splunk-sh1 \
     splunk/splunk:latest
+```
 
 ## splunk lbf
+```
 docker run \
     -p 8001:8000 \
     -p 8091:8089 \
@@ -66,8 +69,10 @@ docker run \
     -v /home/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     --name splunk-lbf \
     splunk/splunk:latest    
+```
 
 ## docker idx1, idx2
+```
 docker run \
     -p 8002:8000 \
     -p 8092:8089 \
@@ -78,7 +83,9 @@ docker run \
     -v /home/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     --name splunk-idx1 \
     splunk/splunk:latest
+```
 
+```
 docker run \
     -p 8003:8000 \
     -p 8093:8089 \
@@ -89,9 +96,11 @@ docker run \
     -v /home/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     --name splunk-idx2 \
     splunk/splunk:latest
+```
 
 
 ## 기본형태
+```
 docker run \
     -p 8001:8000 \
     -p 8089:8089 \
@@ -100,15 +109,20 @@ docker run \
     -e 'SPLUNK_PASSWORD=bitek01!' \
     -v /home/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     splunk/splunk:latest
-
+```
 
 ## docker command
+```
 docker exec -it splunk-sh1 /bin/bash
+```
 
 ## docker 다운로드
+```
 docker pull splunk/splunk:latest
+```
 
 ## docker windows
+```
 docker run \
     -p 8000:8000 \
     -p 8089:8089 \
@@ -118,7 +132,9 @@ docker run \
     -v /c/Users/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     --name splunk-sh1 \
     splunk/splunk:latest
+```
 
+```
 docker run \
     -p 8001:8000 \
     -p 8091:8089 \
@@ -128,7 +144,9 @@ docker run \
     -v /c/Users/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     --name splunk-idx1 \
     splunk/splunk:latest
+```
 
+```
 docker run \
     -p 8002:8000 \
     -p 8092:8089 \
@@ -138,7 +156,9 @@ docker run \
     -v /c/Users/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     --name splunk-idx2 \
     splunk/splunk:latest
+```
 
+```
 docker run \
     -p 8003:8000 \
     -p 8093:8089 \
@@ -148,10 +168,12 @@ docker run \
     -v /c/Users/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     --name splunk-lbf \
     splunk/splunk:latest       
+```
 
 <br>
 ## !docker 실행 안됨
 ---
+```
 docker run -d -p 8000:8000 -e "SPLUNK_START_ARGS=--accept-license" -e "admin:bitek01!" --name splunk-sh1 splunk/splunk:latest
 
 docker run -it -p 8000:8000 -e "SPLUNK_PASSWORD=bitek01!" -e "SPLUNK_START_ARGS=--accept-license" --name splunk-sh1 splunk/splunk:latest
@@ -169,3 +191,4 @@ docker run \
     -e 'SPLUNK_PASSWORD=bitek01!' \
     -v /home/xbb123/splunk-launch.conf:/opt/splunk/etc/splunk-launch.conf \
     splunk/splunk:latest
+```
