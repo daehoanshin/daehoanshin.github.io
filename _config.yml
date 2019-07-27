@@ -1,7 +1,7 @@
 title:              LABS - Getting Started
 email:              xbb321@gmail.com
-description:        dhshin Blog
-author:             Start Bootstrap
+description:      Archives. 
+author:             신군
 baseurl:            "/"
 url:                "https://daehoanshin.github.io"
 
@@ -20,7 +20,7 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 # Build settings
 markdown:           kramdown
 paginate:           5
-paginate_path:      "/posts/page:num/"
+paginate_path:      "/posts/page:num/ "
 plugins:
   - jekyll-feed
   - jekyll-paginate
